@@ -1,0 +1,4530 @@
+{
+  "dbo": {
+    "AWBuildVersion": [
+      {
+        "column_name": "SystemInformationID",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Database Version",
+        "data_type": "nvarchar",
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "VersionDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "DatabaseLog": [
+      {
+        "column_name": "DatabaseLogID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "PostTime",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "DatabaseUser",
+        "data_type": "sysname",
+        "max_length": 256,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Event",
+        "data_type": "sysname",
+        "max_length": 256,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Schema",
+        "data_type": "sysname",
+        "max_length": 256,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Object",
+        "data_type": "sysname",
+        "max_length": 256,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "TSQL",
+        "data_type": "nvarchar",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "XmlEvent",
+        "data_type": "xml",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ErrorLog": [
+      {
+        "column_name": "ErrorLogID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "ErrorTime",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "UserName",
+        "data_type": "sysname",
+        "max_length": 256,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ErrorNumber",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ErrorSeverity",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ErrorState",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ErrorProcedure",
+        "data_type": "nvarchar",
+        "max_length": 252,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ErrorLine",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ErrorMessage",
+        "data_type": "nvarchar",
+        "max_length": 8000,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ]
+  },
+  "HumanResources": {
+    "Department": [
+      {
+        "column_name": "DepartmentID",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "GroupName",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Employee": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "NationalIDNumber",
+        "data_type": "nvarchar",
+        "max_length": 30,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "LoginID",
+        "data_type": "nvarchar",
+        "max_length": 512,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "OrganizationNode",
+        "data_type": "hierarchyid",
+        "max_length": 892,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "OrganizationLevel",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "JobTitle",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "BirthDate",
+        "data_type": "date",
+        "max_length": 3,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "MaritalStatus",
+        "data_type": "nchar",
+        "max_length": 2,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Gender",
+        "data_type": "nchar",
+        "max_length": 2,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "HireDate",
+        "data_type": "date",
+        "max_length": 3,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalariedFlag",
+        "data_type": "Flag",
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "VacationHours",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SickLeaveHours",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CurrentFlag",
+        "data_type": "Flag",
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "EmployeeDepartmentHistory": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "DepartmentID",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ShiftID",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StartDate",
+        "data_type": "date",
+        "max_length": 3,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EndDate",
+        "data_type": "date",
+        "max_length": 3,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "EmployeePayHistory": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "RateChangeDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Rate",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PayFrequency",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "JobCandidate": [
+      {
+        "column_name": "JobCandidateID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Resume",
+        "data_type": "xml",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Shift": [
+      {
+        "column_name": "ShiftID",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StartTime",
+        "data_type": "time",
+        "max_length": 5,
+        "precision": 16,
+        "scale": 7,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EndTime",
+        "data_type": "time",
+        "max_length": 5,
+        "precision": 16,
+        "scale": 7,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ]
+  },
+  "Person": {
+    "Address": [
+      {
+        "column_name": "AddressID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "AddressLine1",
+        "data_type": "nvarchar",
+        "max_length": 120,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "AddressLine2",
+        "data_type": "nvarchar",
+        "max_length": 120,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "City",
+        "data_type": "nvarchar",
+        "max_length": 60,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StateProvinceID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PostalCode",
+        "data_type": "nvarchar",
+        "max_length": 30,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SpatialLocation",
+        "data_type": "geography",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "AddressType": [
+      {
+        "column_name": "AddressTypeID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "BusinessEntity": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "BusinessEntityAddress": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "AddressID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "AddressTypeID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "BusinessEntityContact": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PersonID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ContactTypeID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ContactType": [
+      {
+        "column_name": "ContactTypeID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "CountryRegion": [
+      {
+        "column_name": "CountryRegionCode",
+        "data_type": "nvarchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "EmailAddress": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EmailAddressID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "EmailAddress",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Password": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PasswordHash",
+        "data_type": "varchar",
+        "max_length": 128,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PasswordSalt",
+        "data_type": "varchar",
+        "max_length": 10,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Person": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PersonType",
+        "data_type": "nchar",
+        "max_length": 4,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "NameStyle",
+        "data_type": "NameStyle",
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Title",
+        "data_type": "nvarchar",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "FirstName",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "MiddleName",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "LastName",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Suffix",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "EmailPromotion",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "AdditionalContactInfo",
+        "data_type": "xml",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Demographics",
+        "data_type": "xml",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "PersonPhone": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PhoneNumber",
+        "data_type": "Phone",
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PhoneNumberTypeID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "PhoneNumberType": [
+      {
+        "column_name": "PhoneNumberTypeID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "StateProvince": [
+      {
+        "column_name": "StateProvinceID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "StateProvinceCode",
+        "data_type": "nchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CountryRegionCode",
+        "data_type": "nvarchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "IsOnlyStateProvinceFlag",
+        "data_type": "Flag",
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TerritoryID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ]
+  },
+  "Production": {
+    "BillOfMaterials": [
+      {
+        "column_name": "BillOfMaterialsID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "ProductAssemblyID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ComponentID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StartDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EndDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "UnitMeasureCode",
+        "data_type": "nchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "BOMLevel",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PerAssemblyQty",
+        "data_type": "decimal",
+        "max_length": 5,
+        "precision": 8,
+        "scale": 2,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Culture": [
+      {
+        "column_name": "CultureID",
+        "data_type": "nchar",
+        "max_length": 12,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Document": [
+      {
+        "column_name": "DocumentNode",
+        "data_type": "hierarchyid",
+        "max_length": 892,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "DocumentLevel",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Title",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Owner",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "FolderFlag",
+        "data_type": "bit",
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "FileName",
+        "data_type": "nvarchar",
+        "max_length": 800,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "FileExtension",
+        "data_type": "nvarchar",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Revision",
+        "data_type": "nchar",
+        "max_length": 10,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ChangeNumber",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Status",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "DocumentSummary",
+        "data_type": "nvarchar",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Document",
+        "data_type": "varbinary",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Illustration": [
+      {
+        "column_name": "IllustrationID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Diagram",
+        "data_type": "xml",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Location": [
+      {
+        "column_name": "LocationID",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CostRate",
+        "data_type": "smallmoney",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Availability",
+        "data_type": "decimal",
+        "max_length": 5,
+        "precision": 8,
+        "scale": 2,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Product": [
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductNumber",
+        "data_type": "nvarchar",
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "MakeFlag",
+        "data_type": "Flag",
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "FinishedGoodsFlag",
+        "data_type": "Flag",
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Color",
+        "data_type": "nvarchar",
+        "max_length": 30,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "SafetyStockLevel",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ReorderPoint",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StandardCost",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ListPrice",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Size",
+        "data_type": "nvarchar",
+        "max_length": 10,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "SizeUnitMeasureCode",
+        "data_type": "nchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "WeightUnitMeasureCode",
+        "data_type": "nchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Weight",
+        "data_type": "decimal",
+        "max_length": 5,
+        "precision": 8,
+        "scale": 2,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "DaysToManufacture",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductLine",
+        "data_type": "nchar",
+        "max_length": 4,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Class",
+        "data_type": "nchar",
+        "max_length": 4,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Style",
+        "data_type": "nchar",
+        "max_length": 4,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductSubcategoryID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductModelID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "SellStartDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SellEndDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "DiscontinuedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductCategory": [
+      {
+        "column_name": "ProductCategoryID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductCostHistory": [
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StartDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EndDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "StandardCost",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductDescription": [
+      {
+        "column_name": "ProductDescriptionID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Description",
+        "data_type": "nvarchar",
+        "max_length": 800,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductDocument": [
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "DocumentNode",
+        "data_type": "hierarchyid",
+        "max_length": 892,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductInventory": [
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "LocationID",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Shelf",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Bin",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Quantity",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductListPriceHistory": [
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StartDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EndDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ListPrice",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductModel": [
+      {
+        "column_name": "ProductModelID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CatalogDescription",
+        "data_type": "xml",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Instructions",
+        "data_type": "xml",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductModelIllustration": [
+      {
+        "column_name": "ProductModelID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "IllustrationID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductModelProductDescriptionCulture": [
+      {
+        "column_name": "ProductModelID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductDescriptionID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CultureID",
+        "data_type": "nchar",
+        "max_length": 12,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductPhoto": [
+      {
+        "column_name": "ProductPhotoID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "ThumbNailPhoto",
+        "data_type": "varbinary",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ThumbnailPhotoFileName",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "LargePhoto",
+        "data_type": "varbinary",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "LargePhotoFileName",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductProductPhoto": [
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductPhotoID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Primary",
+        "data_type": "Flag",
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductReview": [
+      {
+        "column_name": "ProductReviewID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ReviewerName",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ReviewDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EmailAddress",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Rating",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Comments",
+        "data_type": "nvarchar",
+        "max_length": 7700,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ProductSubcategory": [
+      {
+        "column_name": "ProductSubcategoryID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "ProductCategoryID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ScrapReason": [
+      {
+        "column_name": "ScrapReasonID",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "TransactionHistory": [
+      {
+        "column_name": "TransactionID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ReferenceOrderID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ReferenceOrderLineID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TransactionDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TransactionType",
+        "data_type": "nchar",
+        "max_length": 2,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Quantity",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ActualCost",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "TransactionHistoryArchive": [
+      {
+        "column_name": "TransactionID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ReferenceOrderID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ReferenceOrderLineID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TransactionDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TransactionType",
+        "data_type": "nchar",
+        "max_length": 2,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Quantity",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ActualCost",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "UnitMeasure": [
+      {
+        "column_name": "UnitMeasureCode",
+        "data_type": "nchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "WorkOrder": [
+      {
+        "column_name": "WorkOrderID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "OrderQty",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StockedQty",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ScrappedQty",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StartDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EndDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "DueDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ScrapReasonID",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "WorkOrderRouting": [
+      {
+        "column_name": "WorkOrderID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "OperationSequence",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "LocationID",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ScheduledStartDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ScheduledEndDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ActualStartDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ActualEndDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ActualResourceHrs",
+        "data_type": "decimal",
+        "max_length": 5,
+        "precision": 9,
+        "scale": 4,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "PlannedCost",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ActualCost",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ]
+  },
+  "Purchasing": {
+    "ProductVendor": [
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "AverageLeadTime",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StandardPrice",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "LastReceiptCost",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "LastReceiptDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "MinOrderQty",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "MaxOrderQty",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "OnOrderQty",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "UnitMeasureCode",
+        "data_type": "nchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "PurchaseOrderDetail": [
+      {
+        "column_name": "PurchaseOrderID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PurchaseOrderDetailID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "DueDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "OrderQty",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "UnitPrice",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "LineTotal",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ReceivedQty",
+        "data_type": "decimal",
+        "max_length": 5,
+        "precision": 8,
+        "scale": 2,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "RejectedQty",
+        "data_type": "decimal",
+        "max_length": 5,
+        "precision": 8,
+        "scale": 2,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StockedQty",
+        "data_type": "decimal",
+        "max_length": 5,
+        "precision": 9,
+        "scale": 2,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "PurchaseOrderHeader": [
+      {
+        "column_name": "PurchaseOrderID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "RevisionNumber",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Status",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EmployeeID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "VendorID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ShipMethodID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "OrderDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ShipDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "SubTotal",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TaxAmt",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Freight",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TotalDue",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ShipMethod": [
+      {
+        "column_name": "ShipMethodID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ShipBase",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ShipRate",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Vendor": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "AccountNumber",
+        "data_type": "AccountNumber",
+        "max_length": 30,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CreditRating",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PreferredVendorStatus",
+        "data_type": "Flag",
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ActiveFlag",
+        "data_type": "Flag",
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PurchasingWebServiceURL",
+        "data_type": "nvarchar",
+        "max_length": 2048,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ]
+  },
+  "Sales": {
+    "CountryRegionCurrency": [
+      {
+        "column_name": "CountryRegionCode",
+        "data_type": "nvarchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CurrencyCode",
+        "data_type": "nchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "CreditCard": [
+      {
+        "column_name": "CreditCardID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "CardType",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CardNumber",
+        "data_type": "nvarchar",
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ExpMonth",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ExpYear",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Currency": [
+      {
+        "column_name": "CurrencyCode",
+        "data_type": "nchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "CurrencyRate": [
+      {
+        "column_name": "CurrencyRateID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "CurrencyRateDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "FromCurrencyCode",
+        "data_type": "nchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ToCurrencyCode",
+        "data_type": "nchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "AverageRate",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EndOfDayRate",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Customer": [
+      {
+        "column_name": "CustomerID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "PersonID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "StoreID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "TerritoryID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "AccountNumber",
+        "data_type": "varchar",
+        "max_length": 10,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "PersonCreditCard": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CreditCardID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "SalesOrderDetail": [
+      {
+        "column_name": "SalesOrderID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalesOrderDetailID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "CarrierTrackingNumber",
+        "data_type": "nvarchar",
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "OrderQty",
+        "data_type": "smallint",
+        "max_length": 2,
+        "precision": 5,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SpecialOfferID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "UnitPrice",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "UnitPriceDiscount",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "LineTotal",
+        "data_type": "numeric",
+        "max_length": 17,
+        "precision": 38,
+        "scale": 6,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "SalesOrderHeader": [
+      {
+        "column_name": "SalesOrderID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "RevisionNumber",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "OrderDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "DueDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ShipDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Status",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "OnlineOrderFlag",
+        "data_type": "Flag",
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalesOrderNumber",
+        "data_type": "nvarchar",
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "PurchaseOrderNumber",
+        "data_type": "OrderNumber",
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "AccountNumber",
+        "data_type": "AccountNumber",
+        "max_length": 30,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "CustomerID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalesPersonID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "TerritoryID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "BillToAddressID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ShipToAddressID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ShipMethodID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CreditCardID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "CreditCardApprovalCode",
+        "data_type": "varchar",
+        "max_length": 15,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "CurrencyRateID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "SubTotal",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TaxAmt",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Freight",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TotalDue",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Comment",
+        "data_type": "nvarchar",
+        "max_length": 256,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "SalesOrderHeaderSalesReason": [
+      {
+        "column_name": "SalesOrderID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalesReasonID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "SalesPerson": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TerritoryID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalesQuota",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Bonus",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CommissionPct",
+        "data_type": "smallmoney",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalesYTD",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalesLastYear",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "SalesPersonQuotaHistory": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "QuotaDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalesQuota",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "SalesReason": [
+      {
+        "column_name": "SalesReasonID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ReasonType",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "SalesTaxRate": [
+      {
+        "column_name": "SalesTaxRateID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "StateProvinceID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TaxType",
+        "data_type": "tinyint",
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TaxRate",
+        "data_type": "smallmoney",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "SalesTerritory": [
+      {
+        "column_name": "TerritoryID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CountryRegionCode",
+        "data_type": "nvarchar",
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Group",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalesYTD",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalesLastYear",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CostYTD",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "CostLastYear",
+        "data_type": "money",
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "SalesTerritoryHistory": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "TerritoryID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StartDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EndDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "ShoppingCartItem": [
+      {
+        "column_name": "ShoppingCartItemID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "ShoppingCartID",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Quantity",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "DateCreated",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "SpecialOffer": [
+      {
+        "column_name": "SpecialOfferID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": true
+      },
+      {
+        "column_name": "Description",
+        "data_type": "nvarchar",
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "DiscountPct",
+        "data_type": "smallmoney",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 4,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Type",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Category",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "StartDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "EndDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "MinQty",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "MaxQty",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "SpecialOfferProduct": [
+      {
+        "column_name": "SpecialOfferID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ProductID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ],
+    "Store": [
+      {
+        "column_name": "BusinessEntityID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "Name",
+        "data_type": "Name",
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "SalesPersonID",
+        "data_type": "int",
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "Demographics",
+        "data_type": "xml",
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": true,
+        "is_identity": false
+      },
+      {
+        "column_name": "rowguid",
+        "data_type": "uniqueidentifier",
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0,
+        "is_nullable": false,
+        "is_identity": false
+      },
+      {
+        "column_name": "ModifiedDate",
+        "data_type": "datetime",
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3,
+        "is_nullable": false,
+        "is_identity": false
+      }
+    ]
+  }
+}

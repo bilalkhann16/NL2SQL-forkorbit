@@ -1,0 +1,639 @@
+Schema: HumanResources
+  Table: Department
+    DepartmentID:smallint
+    Name:Name
+    GroupName:Name
+    ModifiedDate:datetime
+
+  Table: Employee
+    BusinessEntityID:int
+    NationalIDNumber:nvarchar
+    LoginID:nvarchar
+    OrganizationNode:hierarchyid
+    OrganizationLevel:smallint
+    JobTitle:nvarchar
+    BirthDate:date
+    MaritalStatus:nchar
+    Gender:nchar
+    HireDate:date
+    SalariedFlag:Flag
+    VacationHours:smallint
+    SickLeaveHours:smallint
+    CurrentFlag:Flag
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: EmployeeDepartmentHistory
+    BusinessEntityID:int
+    DepartmentID:smallint
+    ShiftID:tinyint
+    StartDate:date
+    EndDate:date
+    ModifiedDate:datetime
+
+  Table: EmployeePayHistory
+    BusinessEntityID:int
+    RateChangeDate:datetime
+    Rate:money
+    PayFrequency:tinyint
+    ModifiedDate:datetime
+
+  Table: JobCandidate
+    JobCandidateID:int
+    BusinessEntityID:int
+    Resume:xml
+    ModifiedDate:datetime
+
+  Table: Shift
+    ShiftID:tinyint
+    Name:Name
+    StartTime:time
+    EndTime:time
+    ModifiedDate:datetime
+
+
+Schema: Person
+  Table: Address
+    AddressID:int
+    AddressLine1:nvarchar
+    AddressLine2:nvarchar
+    City:nvarchar
+    StateProvinceID:int
+    PostalCode:nvarchar
+    SpatialLocation:geography
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: AddressType
+    AddressTypeID:int
+    Name:Name
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: BusinessEntity
+    BusinessEntityID:int
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: BusinessEntityAddress
+    BusinessEntityID:int
+    AddressID:int
+    AddressTypeID:int
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: BusinessEntityContact
+    BusinessEntityID:int
+    PersonID:int
+    ContactTypeID:int
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: ContactType
+    ContactTypeID:int
+    Name:Name
+    ModifiedDate:datetime
+
+  Table: CountryRegion
+    CountryRegionCode:nvarchar
+    Name:Name
+    ModifiedDate:datetime
+
+  Table: EmailAddress
+    BusinessEntityID:int
+    EmailAddressID:int
+    EmailAddress:nvarchar
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: Password
+    BusinessEntityID:int
+    PasswordHash:varchar
+    PasswordSalt:varchar
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: Person
+    BusinessEntityID:int
+    PersonType:nchar
+    NameStyle:NameStyle
+    Title:nvarchar
+    FirstName:Name
+    MiddleName:Name
+    LastName:Name
+    Suffix:nvarchar
+    EmailPromotion:int
+    AdditionalContactInfo:xml
+    Demographics:xml
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: PersonPhone
+    BusinessEntityID:int
+    PhoneNumber:Phone
+    PhoneNumberTypeID:int
+    ModifiedDate:datetime
+
+  Table: PhoneNumberType
+    PhoneNumberTypeID:int
+    Name:Name
+    ModifiedDate:datetime
+
+  Table: StateProvince
+    StateProvinceID:int
+    StateProvinceCode:nchar
+    CountryRegionCode:nvarchar
+    IsOnlyStateProvinceFlag:Flag
+    Name:Name
+    TerritoryID:int
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+
+Schema: Production
+  Table: BillOfMaterials
+    BillOfMaterialsID:int
+    ProductAssemblyID:int
+    ComponentID:int
+    StartDate:datetime
+    EndDate:datetime
+    UnitMeasureCode:nchar
+    BOMLevel:smallint
+    PerAssemblyQty:decimal
+    ModifiedDate:datetime
+
+  Table: Culture
+    CultureID:nchar
+    Name:Name
+    ModifiedDate:datetime
+
+  Table: Document
+    DocumentNode:hierarchyid
+    DocumentLevel:smallint
+    Title:nvarchar
+    Owner:int
+    FolderFlag:bit
+    FileName:nvarchar
+    FileExtension:nvarchar
+    Revision:nchar
+    ChangeNumber:int
+    Status:tinyint
+    DocumentSummary:nvarchar
+    Document:varbinary
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: Illustration
+    IllustrationID:int
+    Diagram:xml
+    ModifiedDate:datetime
+
+  Table: Location
+    LocationID:smallint
+    Name:Name
+    CostRate:smallmoney
+    Availability:decimal
+    ModifiedDate:datetime
+
+  Table: Product
+    ProductID:int
+    Name:Name
+    ProductNumber:nvarchar
+    MakeFlag:Flag
+    FinishedGoodsFlag:Flag
+    Color:nvarchar
+    SafetyStockLevel:smallint
+    ReorderPoint:smallint
+    StandardCost:money
+    ListPrice:money
+    Size:nvarchar
+    SizeUnitMeasureCode:nchar
+    WeightUnitMeasureCode:nchar
+    Weight:decimal
+    DaysToManufacture:int
+    ProductLine:nchar
+    Class:nchar
+    Style:nchar
+    ProductSubcategoryID:int
+    ProductModelID:int
+    SellStartDate:datetime
+    SellEndDate:datetime
+    DiscontinuedDate:datetime
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: ProductCategory
+    ProductCategoryID:int
+    Name:Name
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: ProductCostHistory
+    ProductID:int
+    StartDate:datetime
+    EndDate:datetime
+    StandardCost:money
+    ModifiedDate:datetime
+
+  Table: ProductDescription
+    ProductDescriptionID:int
+    Description:nvarchar
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: ProductDocument
+    ProductID:int
+    DocumentNode:hierarchyid
+    ModifiedDate:datetime
+
+  Table: ProductInventory
+    ProductID:int
+    LocationID:smallint
+    Shelf:nvarchar
+    Bin:tinyint
+    Quantity:smallint
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: ProductListPriceHistory
+    ProductID:int
+    StartDate:datetime
+    EndDate:datetime
+    ListPrice:money
+    ModifiedDate:datetime
+
+  Table: ProductModel
+    ProductModelID:int
+    Name:Name
+    CatalogDescription:xml
+    Instructions:xml
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: ProductModelIllustration
+    ProductModelID:int
+    IllustrationID:int
+    ModifiedDate:datetime
+
+  Table: ProductModelProductDescriptionCulture
+    ProductModelID:int
+    ProductDescriptionID:int
+    CultureID:nchar
+    ModifiedDate:datetime
+
+  Table: ProductPhoto
+    ProductPhotoID:int
+    ThumbNailPhoto:varbinary
+    ThumbnailPhotoFileName:nvarchar
+    LargePhoto:varbinary
+    LargePhotoFileName:nvarchar
+    ModifiedDate:datetime
+
+  Table: ProductProductPhoto
+    ProductID:int
+    ProductPhotoID:int
+    Primary:Flag
+    ModifiedDate:datetime
+
+  Table: ProductReview
+    ProductReviewID:int
+    ProductID:int
+    ReviewerName:Name
+    ReviewDate:datetime
+    EmailAddress:nvarchar
+    Rating:int
+    Comments:nvarchar
+    ModifiedDate:datetime
+
+  Table: ProductSubcategory
+    ProductSubcategoryID:int
+    ProductCategoryID:int
+    Name:Name
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: ScrapReason
+    ScrapReasonID:smallint
+    Name:Name
+    ModifiedDate:datetime
+
+  Table: TransactionHistory
+    TransactionID:int
+    ProductID:int
+    ReferenceOrderID:int
+    ReferenceOrderLineID:int
+    TransactionDate:datetime
+    TransactionType:nchar
+    Quantity:int
+    ActualCost:money
+    ModifiedDate:datetime
+
+  Table: TransactionHistoryArchive
+    TransactionID:int
+    ProductID:int
+    ReferenceOrderID:int
+    ReferenceOrderLineID:int
+    TransactionDate:datetime
+    TransactionType:nchar
+    Quantity:int
+    ActualCost:money
+    ModifiedDate:datetime
+
+  Table: UnitMeasure
+    UnitMeasureCode:nchar
+    Name:Name
+    ModifiedDate:datetime
+
+  Table: WorkOrder
+    WorkOrderID:int
+    ProductID:int
+    OrderQty:int
+    StockedQty:int
+    ScrappedQty:smallint
+    StartDate:datetime
+    EndDate:datetime
+    DueDate:datetime
+    ScrapReasonID:smallint
+    ModifiedDate:datetime
+
+  Table: WorkOrderRouting
+    WorkOrderID:int
+    ProductID:int
+    OperationSequence:smallint
+    LocationID:smallint
+    ScheduledStartDate:datetime
+    ScheduledEndDate:datetime
+    ActualStartDate:datetime
+    ActualEndDate:datetime
+    ActualResourceHrs:decimal
+    PlannedCost:money
+    ActualCost:money
+    ModifiedDate:datetime
+
+
+Schema: Purchasing
+  Table: ProductVendor
+    ProductID:int
+    BusinessEntityID:int
+    AverageLeadTime:int
+    StandardPrice:money
+    LastReceiptCost:money
+    LastReceiptDate:datetime
+    MinOrderQty:int
+    MaxOrderQty:int
+    OnOrderQty:int
+    UnitMeasureCode:nchar
+    ModifiedDate:datetime
+
+  Table: PurchaseOrderDetail
+    PurchaseOrderID:int
+    PurchaseOrderDetailID:int
+    DueDate:datetime
+    OrderQty:smallint
+    ProductID:int
+    UnitPrice:money
+    LineTotal:money
+    ReceivedQty:decimal
+    RejectedQty:decimal
+    StockedQty:decimal
+    ModifiedDate:datetime
+
+  Table: PurchaseOrderHeader
+    PurchaseOrderID:int
+    RevisionNumber:tinyint
+    Status:tinyint
+    EmployeeID:int
+    VendorID:int
+    ShipMethodID:int
+    OrderDate:datetime
+    ShipDate:datetime
+    SubTotal:money
+    TaxAmt:money
+    Freight:money
+    TotalDue:money
+    ModifiedDate:datetime
+
+  Table: ShipMethod
+    ShipMethodID:int
+    Name:Name
+    ShipBase:money
+    ShipRate:money
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: Vendor
+    BusinessEntityID:int
+    AccountNumber:AccountNumber
+    Name:Name
+    CreditRating:tinyint
+    PreferredVendorStatus:Flag
+    ActiveFlag:Flag
+    PurchasingWebServiceURL:nvarchar
+    ModifiedDate:datetime
+
+
+Schema: Sales
+  Table: CountryRegionCurrency
+    CountryRegionCode:nvarchar
+    CurrencyCode:nchar
+    ModifiedDate:datetime
+
+  Table: CreditCard
+    CreditCardID:int
+    CardType:nvarchar
+    CardNumber:nvarchar
+    ExpMonth:tinyint
+    ExpYear:smallint
+    ModifiedDate:datetime
+
+  Table: Currency
+    CurrencyCode:nchar
+    Name:Name
+    ModifiedDate:datetime
+
+  Table: CurrencyRate
+    CurrencyRateID:int
+    CurrencyRateDate:datetime
+    FromCurrencyCode:nchar
+    ToCurrencyCode:nchar
+    AverageRate:money
+    EndOfDayRate:money
+    ModifiedDate:datetime
+
+  Table: Customer
+    CustomerID:int
+    PersonID:int
+    StoreID:int
+    TerritoryID:int
+    AccountNumber:varchar
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: PersonCreditCard
+    BusinessEntityID:int
+    CreditCardID:int
+    ModifiedDate:datetime
+
+  Table: SalesOrderDetail
+    SalesOrderID:int
+    SalesOrderDetailID:int
+    CarrierTrackingNumber:nvarchar
+    OrderQty:smallint
+    ProductID:int
+    SpecialOfferID:int
+    UnitPrice:money
+    UnitPriceDiscount:money
+    LineTotal:numeric
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: SalesOrderHeader
+    SalesOrderID:int
+    RevisionNumber:tinyint
+    OrderDate:datetime
+    DueDate:datetime
+    ShipDate:datetime
+    Status:tinyint
+    OnlineOrderFlag:Flag
+    SalesOrderNumber:nvarchar
+    PurchaseOrderNumber:OrderNumber
+    AccountNumber:AccountNumber
+    CustomerID:int
+    SalesPersonID:int
+    TerritoryID:int
+    BillToAddressID:int
+    ShipToAddressID:int
+    ShipMethodID:int
+    CreditCardID:int
+    CreditCardApprovalCode:varchar
+    CurrencyRateID:int
+    SubTotal:money
+    TaxAmt:money
+    Freight:money
+    TotalDue:money
+    Comment:nvarchar
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: SalesOrderHeaderSalesReason
+    SalesOrderID:int
+    SalesReasonID:int
+    ModifiedDate:datetime
+
+  Table: SalesPerson
+    BusinessEntityID:int
+    TerritoryID:int
+    SalesQuota:money
+    Bonus:money
+    CommissionPct:smallmoney
+    SalesYTD:money
+    SalesLastYear:money
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: SalesPersonQuotaHistory
+    BusinessEntityID:int
+    QuotaDate:datetime
+    SalesQuota:money
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: SalesReason
+    SalesReasonID:int
+    Name:Name
+    ReasonType:Name
+    ModifiedDate:datetime
+
+  Table: SalesTaxRate
+    SalesTaxRateID:int
+    StateProvinceID:int
+    TaxType:tinyint
+    TaxRate:smallmoney
+    Name:Name
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: SalesTerritory
+    TerritoryID:int
+    Name:Name
+    CountryRegionCode:nvarchar
+    Group:nvarchar
+    SalesYTD:money
+    SalesLastYear:money
+    CostYTD:money
+    CostLastYear:money
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: SalesTerritoryHistory
+    BusinessEntityID:int
+    TerritoryID:int
+    StartDate:datetime
+    EndDate:datetime
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: ShoppingCartItem
+    ShoppingCartItemID:int
+    ShoppingCartID:nvarchar
+    Quantity:int
+    ProductID:int
+    DateCreated:datetime
+    ModifiedDate:datetime
+
+  Table: SpecialOffer
+    SpecialOfferID:int
+    Description:nvarchar
+    DiscountPct:smallmoney
+    Type:nvarchar
+    Category:nvarchar
+    StartDate:datetime
+    EndDate:datetime
+    MinQty:int
+    MaxQty:int
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: SpecialOfferProduct
+    SpecialOfferID:int
+    ProductID:int
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+  Table: Store
+    BusinessEntityID:int
+    Name:Name
+    SalesPersonID:int
+    Demographics:xml
+    rowguid:uniqueidentifier
+    ModifiedDate:datetime
+
+
+Schema: dbo
+  Table: AWBuildVersion
+    SystemInformationID:tinyint
+    Database Version:nvarchar
+    VersionDate:datetime
+    ModifiedDate:datetime
+
+  Table: DatabaseLog
+    DatabaseLogID:int
+    PostTime:datetime
+    DatabaseUser:sysname
+    Event:sysname
+    Schema:sysname
+    Object:sysname
+    TSQL:nvarchar
+    XmlEvent:xml
+
+  Table: ErrorLog
+    ErrorLogID:int
+    ErrorTime:datetime
+    UserName:sysname
+    ErrorNumber:int
+    ErrorSeverity:int
+    ErrorState:int
+    ErrorProcedure:nvarchar
+    ErrorLine:int
+    ErrorMessage:nvarchar
+
